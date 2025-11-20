@@ -1,0 +1,248 @@
+(base) Eshita@MacBook-Air-4 LIMU-BERT-Public-master % python new_test.py                                  
+Loading raw data - Data: (9166, 120, 6) Labels: (9166, 120, 3)                                            
+Before normalization - Data shape: (9166, 120, 6) [-6.53186037e+00  1.09563701e+00  7.50957234e+00 -9.4299
+3150e-03                                                                                                  
+ -8.63647463e-03 -1.58691408e-03]                                                                         
+After normalization - Data: (9166, 120, 6) Labels: (9166, 120, 3) [-0.66651636  0.1117997   0.76628289 -0.
+00942993 -0.00863647 -0.00158691]                                                                         
+                                                                                                          
+Normalized Samples                                                                                        
+[-0.61816811  0.1017263   0.81249097 -0.00270081  0.00247192 -0.00222778]                                 
+[-0.61558128  0.10407023  0.81467703 -0.00280762  0.00930786 -0.00340271]                                 
+[-0.61699007  0.10407024  0.81696024  0.00296021  0.01091003 -0.00820923]                                 
+Training Configurations:                                                                                  
+INPUT_LEN: 80                                                                                             
+PREDICT_LEN: 10                                                                                           
+TRAIN_RATE: 0.8                                                                                           
+BATCH_SIZE: 32                                                                                            
+LEARNING_RATE: 0.0001                                                                                     
+INITIAL_REMOVE: 20                                                                                        
+WINDOW_SIZE: 5                                                                                            
+THRESHOLD: 0.0275                                                                                         
+MIN_ACTIVE: 5                                                                                             
+Number of sequences: 9166                                                                                 
+Min length: 5                                                                                             
+Max length: 100                                                                                           
+Mean length: 96.89                                                                                        
+Median length: 100.0                                                                                      
+Filtered data shapes:                                                                                     
+Sequence 0: (100, 6)                                                                                      
+Sequence 1: (100, 6)                                                                                      
+Sequence 2: (100, 6)                                                                                      
+Sequence 3: (100, 6)                                                                                      
+Sequence 4: (100, 6)                                                                                      
+Total NSP pairs: 91078            
+Input: torch.Size([80, 6]), Target: torch.Size([10, 6]), Input Pos: torch.Size([80]), TargeThu10 [185/220]
+ze([10])                                                                                                  
+Input: torch.Size([80, 6]), Target: torch.Size([10, 6]), Input Pos: torch.Size([80]), Target Pos: torch.Si
+ze([10])                                                                                                  
+Input: torch.Size([80, 6]), Target: torch.Size([10, 6]), Input Pos: torch.Size([80]), Target Pos: torch.Si
+ze([10])                                                                                                  
+Total sequences: 9166                                                                                     
+Total NSP pairs: 91078                                                                                    
+Average NSP pairs per sequence: 9.94                                                                      
+Train NSP pairs: 72862                                                                                    
+Val NSP pairs: 9108                                                                                       
+Test NSP pairs: 9108                                                                                      
+Epoch 1/200, Train Loss: 0.0711, Val Loss: 0.0481, Test Loss: 0.0487                                      
+Epoch 2/200, Train Loss: 0.0434, Val Loss: 0.0380, Test Loss: 0.0387
+Epoch 3/200, Train Loss: 0.0362, Val Loss: 0.0337, Test Loss: 0.0340
+Epoch 4/200, Train Loss: 0.0324, Val Loss: 0.0311, Test Loss: 0.0319
+Epoch 5/200, Train Loss: 0.0295, Val Loss: 0.0299, Test Loss: 0.0302
+Epoch 6/200, Train Loss: 0.0272, Val Loss: 0.0275, Test Loss: 0.0281
+Epoch 7/200, Train Loss: 0.0254, Val Loss: 0.0258, Test Loss: 0.0261
+Epoch 8/200, Train Loss: 0.0238, Val Loss: 0.0244, Test Loss: 0.0247
+Epoch 9/200, Train Loss: 0.0226, Val Loss: 0.0239, Test Loss: 0.0240
+Epoch 10/200, Train Loss: 0.0213, Val Loss: 0.0229, Test Loss: 0.0233
+Epoch 11/200, Train Loss: 0.0203, Val Loss: 0.0222, Test Loss: 0.0225
+Epoch 12/200, Train Loss: 0.0195, Val Loss: 0.0210, Test Loss: 0.0215
+Epoch 13/200, Train Loss: 0.0185, Val Loss: 0.0206, Test Loss: 0.0210
+Epoch 14/200, Train Loss: 0.0178, Val Loss: 0.0198, Test Loss: 0.0201
+Epoch 15/200, Train Loss: 0.0174, Val Loss: 0.0198, Test Loss: 0.0196
+Epoch 16/200, Train Loss: 0.0169, Val Loss: 0.0189, Test Loss: 0.0194
+Epoch 17/200, Train Loss: 0.0160, Val Loss: 0.0181, Test Loss: 0.0184
+Epoch 18/200, Train Loss: 0.0156, Val Loss: 0.0176, Test Loss: 0.0181      
+Epoch 19/200, Train Loss: 0.0150, Val Loss: 0.0182, Test Loss: 0.0187
+Epoch 20/200, Train Loss: 0.0146, Val Loss: 0.0176, Test Loss: 0.0180
+Epoch 21/200, Train Loss: 0.0141, Val Loss: 0.0165, Test Loss: 0.0164
+Epoch 22/200, Train Loss: 0.0137, Val Loss: 0.0163, Test Loss: 0.0164
+Epoch 23/200, Train Loss: 0.0136, Val Loss: 0.0158, Test Loss: 0.0163
+Epoch 24/200, Train Loss: 0.0131, Val Loss: 0.0153, Test Loss: 0.0157
+Epoch 25/200, Train Loss: 0.0128, Val Loss: 0.0153, Test Loss: 0.0156
+Epoch 26/200, Train Loss: 0.0123, Val Loss: 0.0146, Test Loss: 0.0150                                     
+Epoch 27/200, Train Loss: 0.0120, Val Loss: 0.0150, Test Loss: 0.0152
+Epoch 28/200, Train Loss: 0.0119, Val Loss: 0.0153, Test Loss: 0.0156
+Epoch 29/200, Train Loss: 0.0115, Val Loss: 0.0145, Test Loss: 0.0145
+Epoch 30/200, Train Loss: 0.0112, Val Loss: 0.0142, Test Loss: 0.0145
+Epoch 31/200, Train Loss: 0.0110, Val Loss: 0.0140, Test Loss: 0.0144
+Epoch 32/200, Train Loss: 0.0109, Val Loss: 0.0136, Test Loss: 0.0140            
+Epoch 33/200, Train Loss: 0.0107, Val Loss: 0.0135, Test Loss: 0.0143
+Epoch 34/200, Train Loss: 0.0104, Val Loss: 0.0133, Test Loss: 0.0135
+Epoch 35/200, Train Loss: 0.0102, Val Loss: 0.0138, Test Loss: 0.0140
+Epoch 36/200, Train Loss: 0.0102, Val Loss: 0.0129, Test Loss: 0.0132
+Epoch 37/200, Train Loss: 0.0097, Val Loss: 0.0126, Test Loss: 0.0130
+Epoch 38/200, Train Loss: 0.0097, Val Loss: 0.0128, Test Loss: 0.0132
+Epoch 39/200, Train Loss: 0.0095, Val Loss: 0.0129, Test Loss: 0.0129
+Epoch 40/200, Train Loss: 0.0092, Val Loss: 0.0127, Test Loss: 0.0131
+Epoch 41/200, Train Loss: 0.0092, Val Loss: 0.0124, Test Loss: 0.0126
+Epoch 42/200, Train Loss: 0.0091, Val Loss: 0.0125, Test Loss: 0.0129
+Epoch 43/200, Train Loss: 0.0089, Val Loss: 0.0120, Test Loss: 0.0123
+Epoch 44/200, Train Loss: 0.0091, Val Loss: 0.0126, Test Loss: 0.0132
+Epoch 45/200, Train Loss: 0.0091, Val Loss: 0.0116, Test Loss: 0.0121
+Epoch 46/200, Train Loss: 0.0091, Val Loss: 0.0131, Test Loss: 0.0132
+Epoch 47/200, Train Loss: 0.0087, Val Loss: 0.0123, Test Loss: 0.0123
+Epoch 48/200, Train Loss: 0.0085, Val Loss: 0.0125, Test Loss: 0.0125
+Epoch 49/200, Train Loss: 0.0084, Val Loss: 0.0123, Test Loss: 0.0126
+Epoch 50/200, Train Loss: 0.0084, Val Loss: 0.0120, Test Loss: 0.0124
+Epoch 51/200, Train Loss: 0.0082, Val Loss: 0.0118, Test Loss: 0.0118
+Epoch 52/200, Train Loss: 0.0081, Val Loss: 0.0119, Test Loss: 0.0122
+Epoch 53/200, Train Loss: 0.0079, Val Loss: 0.0118, Test Loss: 0.0120
+Epoch 54/200, Train Loss: 0.0078, Val Loss: 0.0113, Test Loss: 0.0115
+Epoch 55/200, Train Loss: 0.0077, Val Loss: 0.0111, Test Loss: 0.0115
+Epoch 56/200, Train Loss: 0.0076, Val Loss: 0.0112, Test Loss: 0.0115
+Epoch 57/200, Train Loss: 0.0076, Val Loss: 0.0116, Test Loss: 0.0117
+Epoch 58/200, Train Loss: 0.0075, Val Loss: 0.0112, Test Loss: 0.0116
+Epoch 59/200, Train Loss: 0.0074, Val Loss: 0.0112, Test Loss: 0.0115
+Epoch 60/200, Train Loss: 0.0073, Val Loss: 0.0117, Test Loss: 0.0120
+Epoch 61/200, Train Loss: 0.0073, Val Loss: 0.0109, Test Loss: 0.0109
+Epoch 62/200, Train Loss: 0.0072, Val Loss: 0.0107, Test Loss: 0.0109
+Epoch 63/200, Train Loss: 0.0071, Val Loss: 0.0111, Test Loss: 0.0112
+Epoch 64/200, Train Loss: 0.0070, Val Loss: 0.0109, Test Loss: 0.0112
+Epoch 65/200, Train Loss: 0.0069, Val Loss: 0.0109, Test Loss: 0.0109
+Epoch 66/200, Train Loss: 0.0069, Val Loss: 0.0109, Test Loss: 0.0110
+Epoch 67/200, Train Loss: 0.0068, Val Loss: 0.0108, Test Loss: 0.0111
+Epoch 68/200, Train Loss: 0.0068, Val Loss: 0.0107, Test Loss: 0.0111
+Epoch 69/200, Train Loss: 0.0067, Val Loss: 0.0103, Test Loss: 0.0107
+Epoch 70/200, Train Loss: 0.0066, Val Loss: 0.0106, Test Loss: 0.0108
+Epoch 71/200, Train Loss: 0.0066, Val Loss: 0.0105, Test Loss: 0.0107
+Epoch 72/200, Train Loss: 0.0066, Val Loss: 0.0108, Test Loss: 0.0109
+Epoch 73/200, Train Loss: 0.0064, Val Loss: 0.0103, Test Loss: 0.0105
+Epoch 74/200, Train Loss: 0.0065, Val Loss: 0.0103, Test Loss: 0.0105
+Epoch 75/200, Train Loss: 0.0064, Val Loss: 0.0105, Test Loss: 0.0107
+Epoch 76/200, Train Loss: 0.0063, Val Loss: 0.0102, Test Loss: 0.0105
+Epoch 77/200, Train Loss: 0.0063, Val Loss: 0.0103, Test Loss: 0.0106
+Epoch 78/200, Train Loss: 0.0063, Val Loss: 0.0102, Test Loss: 0.0103
+Epoch 79/200, Train Loss: 0.0064, Val Loss: 0.0104, Test Loss: 0.0108
+Epoch 80/200, Train Loss: 0.0061, Val Loss: 0.0101, Test Loss: 0.0103
+Epoch 81/200, Train Loss: 0.0061, Val Loss: 0.0101, Test Loss: 0.0104
+Epoch 82/200, Train Loss: 0.0062, Val Loss: 0.0100, Test Loss: 0.0102
+Epoch 83/200, Train Loss: 0.0061, Val Loss: 0.0101, Test Loss: 0.0102
+Epoch 84/200, Train Loss: 0.0060, Val Loss: 0.0099, Test Loss: 0.0102
+Epoch 85/200, Train Loss: 0.0062, Val Loss: 0.0101, Test Loss: 0.0101
+Epoch 86/200, Train Loss: 0.0065, Val Loss: 0.0100, Test Loss: 0.0100
+Epoch 87/200, Train Loss: 0.0059, Val Loss: 0.0099, Test Loss: 0.0100
+Epoch 88/200, Train Loss: 0.0061, Val Loss: 0.0101, Test Loss: 0.0102
+Epoch 89/200, Train Loss: 0.0060, Val Loss: 0.0101, Test Loss: 0.0103
+Epoch 90/200, Train Loss: 0.0062, Val Loss: 0.0105, Test Loss: 0.0104
+Epoch 91/200, Train Loss: 0.0063, Val Loss: 0.0100, Test Loss: 0.0101
+Epoch 92/200, Train Loss: 0.0057, Val Loss: 0.0097, Test Loss: 0.0100
+Epoch 93/200, Train Loss: 0.0057, Val Loss: 0.0098, Test Loss: 0.0101
+Epoch 94/200, Train Loss: 0.0057, Val Loss: 0.0097, Test Loss: 0.0100
+Epoch 95/200, Train Loss: 0.0057, Val Loss: 0.0095, Test Loss: 0.0098
+Epoch 96/200, Train Loss: 0.0057, Val Loss: 0.0099, Test Loss: 0.0099
+Epoch 97/200, Train Loss: 0.0056, Val Loss: 0.0096, Test Loss: 0.0099
+Epoch 98/200, Train Loss: 0.0057, Val Loss: 0.0096, Test Loss: 0.0099                             
+Epoch 99/200, Train Loss: 0.0057, Val Loss: 0.0098, Test Loss: 0.0101                                     
+Epoch 100/200, Train Loss: 0.0056, Val Loss: 0.0094, Test Loss: 0.0096                                    
+Epoch 101/200, Train Loss: 0.0058, Val Loss: 0.0096, Test Loss: 0.0099                                    
+Epoch 102/200, Train Loss: 0.0054, Val Loss: 0.0096, Test Loss: 0.0099                                    
+Epoch 103/200, Train Loss: 0.0054, Val Loss: 0.0096, Test Loss: 0.0097                                    
+Epoch 104/200, Train Loss: 0.0055, Val Loss: 0.0095, Test Loss: 0.0098                                    
+Epoch 105/200, Train Loss: 0.0054, Val Loss: 0.0097, Test Loss: 0.0098                                    
+Epoch 106/200, Train Loss: 0.0054, Val Loss: 0.0095, Test Loss: 0.0097                                    
+Epoch 107/200, Train Loss: 0.0054, Val Loss: 0.0132, Test Loss: 0.0132                                    
+Epoch 108/200, Train Loss: 0.0057, Val Loss: 0.0094, Test Loss: 0.0094                                    
+Epoch 109/200, Train Loss: 0.0053, Val Loss: 0.0098, Test Loss: 0.0098                                    
+Epoch 110/200, Train Loss: 0.0054, Val Loss: 0.0092, Test Loss: 0.0093                                    
+Epoch 111/200, Train Loss: 0.0054, Val Loss: 0.0096, Test Loss: 0.0097                                    
+Epoch 112/200, Train Loss: 0.0054, Val Loss: 0.0093, Test Loss: 0.0093                                    
+Epoch 113/200, Train Loss: 0.0052, Val Loss: 0.0095, Test Loss: 0.0095                                    
+Epoch 114/200, Train Loss: 0.0053, Val Loss: 0.0094, Test Loss: 0.0095                                    
+Epoch 115/200, Train Loss: 0.0052, Val Loss: 0.0092, Test Loss: 0.0096
+Epoch 116/200, Train Loss: 0.0053, Val Loss: 0.0097, Test Loss: 0.0098
+Epoch 117/200, Train Loss: 0.0054, Val Loss: 0.0098, Test Loss: 0.0102
+Epoch 118/200, Train Loss: 0.0051, Val Loss: 0.0091, Test Loss: 0.0094
+Epoch 119/200, Train Loss: 0.0051, Val Loss: 0.0093, Test Loss: 0.0095
+Epoch 120/200, Train Loss: 0.0052, Val Loss: 0.0099, Test Loss: 0.0100
+Epoch 121/200, Train Loss: 0.0052, Val Loss: 0.0095, Test Loss: 0.0097
+Epoch 122/200, Train Loss: 0.0051, Val Loss: 0.0091, Test Loss: 0.0095
+Epoch 123/200, Train Loss: 0.0050, Val Loss: 0.0092, Test Loss: 0.0094
+Epoch 124/200, Train Loss: 0.0051, Val Loss: 0.0093, Test Loss: 0.0095
+Epoch 125/200, Train Loss: 0.0051, Val Loss: 0.0091, Test Loss: 0.0093
+Epoch 126/200, Train Loss: 0.0050, Val Loss: 0.0091, Test Loss: 0.0093
+Epoch 127/200, Train Loss: 0.0050, Val Loss: 0.0091, Test Loss: 0.0094
+Epoch 128/200, Train Loss: 0.0049, Val Loss: 0.0092, Test Loss: 0.0094
+Epoch 129/200, Train Loss: 0.0049, Val Loss: 0.0093, Test Loss: 0.0094
+Epoch 130/200, Train Loss: 0.0050, Val Loss: 0.0093, Test Loss: 0.0096
+Epoch 131/200, Train Loss: 0.0052, Val Loss: 0.0088, Test Loss: 0.0090
+Epoch 132/200, Train Loss: 0.0052, Val Loss: 0.0093, Test Loss: 0.0096
+Epoch 133/200, Train Loss: 0.0051, Val Loss: 0.0093, Test Loss: 0.0096
+Epoch 134/200, Train Loss: 0.0049, Val Loss: 0.0090, Test Loss: 0.0092
+Epoch 135/200, Train Loss: 0.0048, Val Loss: 0.0092, Test Loss: 0.0094
+Epoch 136/200, Train Loss: 0.0049, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 137/200, Train Loss: 0.0049, Val Loss: 0.0090, Test Loss: 0.0093
+Epoch 138/200, Train Loss: 0.0048, Val Loss: 0.0091, Test Loss: 0.0094
+Epoch 139/200, Train Loss: 0.0048, Val Loss: 0.0089, Test Loss: 0.0091
+Epoch 140/200, Train Loss: 0.0048, Val Loss: 0.0092, Test Loss: 0.0093
+Epoch 141/200, Train Loss: 0.0048, Val Loss: 0.0090, Test Loss: 0.0092
+Epoch 142/200, Train Loss: 0.0048, Val Loss: 0.0089, Test Loss: 0.0091
+Epoch 143/200, Train Loss: 0.0047, Val Loss: 0.0090, Test Loss: 0.0094
+Epoch 144/200, Train Loss: 0.0048, Val Loss: 0.0093, Test Loss: 0.0094
+Epoch 145/200, Train Loss: 0.0049, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 146/200, Train Loss: 0.0047, Val Loss: 0.0089, Test Loss: 0.0091
+Epoch 147/200, Train Loss: 0.0047, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 148/200, Train Loss: 0.0047, Val Loss: 0.0094, Test Loss: 0.0094
+Epoch 149/200, Train Loss: 0.0047, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 150/200, Train Loss: 0.0046, Val Loss: 0.0089, Test Loss: 0.0092
+Epoch 151/200, Train Loss: 0.0046, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 152/200, Train Loss: 0.0047, Val Loss: 0.0087, Test Loss: 0.0091
+Epoch 153/200, Train Loss: 0.0046, Val Loss: 0.0089, Test Loss: 0.0093
+Epoch 154/200, Train Loss: 0.0046, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 155/200, Train Loss: 0.0047, Val Loss: 0.0090, Test Loss: 0.0092
+Epoch 156/200, Train Loss: 0.0047, Val Loss: 0.0089, Test Loss: 0.0093
+Epoch 157/200, Train Loss: 0.0047, Val Loss: 0.0088, Test Loss: 0.0092
+Epoch 158/200, Train Loss: 0.0046, Val Loss: 0.0088, Test Loss: 0.0092
+Epoch 159/200, Train Loss: 0.0045, Val Loss: 0.0088, Test Loss: 0.0090
+Epoch 160/200, Train Loss: 0.0045, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 161/200, Train Loss: 0.0045, Val Loss: 0.0088, Test Loss: 0.0090
+Epoch 162/200, Train Loss: 0.0046, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 163/200, Train Loss: 0.0045, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 164/200, Train Loss: 0.0045, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 165/200, Train Loss: 0.0045, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 166/200, Train Loss: 0.0048, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 167/200, Train Loss: 0.0044, Val Loss: 0.0086, Test Loss: 0.0088
+Epoch 168/200, Train Loss: 0.0044, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 169/200, Train Loss: 0.0044, Val Loss: 0.0088, Test Loss: 0.0090
+Epoch 170/200, Train Loss: 0.0045, Val Loss: 0.0087, Test Loss: 0.0090                            [17/233]
+Epoch 171/200, Train Loss: 0.0044, Val Loss: 0.0088, Test Loss: 0.0090                                    
+Epoch 172/200, Train Loss: 0.0044, Val Loss: 0.0092, Test Loss: 0.0093                                    
+Epoch 173/200, Train Loss: 0.0044, Val Loss: 0.0087, Test Loss: 0.0089
+Epoch 174/200, Train Loss: 0.0044, Val Loss: 0.0088, Test Loss: 0.0091
+Epoch 175/200, Train Loss: 0.0045, Val Loss: 0.0086, Test Loss: 0.0090
+Epoch 176/200, Train Loss: 0.0045, Val Loss: 0.0086, Test Loss: 0.0089
+Epoch 177/200, Train Loss: 0.0046, Val Loss: 0.0091, Test Loss: 0.0093
+Epoch 178/200, Train Loss: 0.0044, Val Loss: 0.0086, Test Loss: 0.0088
+Epoch 179/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0089
+Epoch 180/200, Train Loss: 0.0043, Val Loss: 0.0087, Test Loss: 0.0089
+Epoch 181/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0089
+Epoch 182/200, Train Loss: 0.0044, Val Loss: 0.0085, Test Loss: 0.0088
+Epoch 183/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0088
+Epoch 184/200, Train Loss: 0.0043, Val Loss: 0.0085, Test Loss: 0.0088
+Epoch 185/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0090
+Epoch 186/200, Train Loss: 0.0043, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 187/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0089                             
+Epoch 188/200, Train Loss: 0.0043, Val Loss: 0.0087, Test Loss: 0.0089
+Epoch 189/200, Train Loss: 0.0043, Val Loss: 0.0087, Test Loss: 0.0089
+Epoch 190/200, Train Loss: 0.0042, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 191/200, Train Loss: 0.0044, Val Loss: 0.0090, Test Loss: 0.0088
+Epoch 192/200, Train Loss: 0.0043, Val Loss: 0.0087, Test Loss: 0.0089
+Epoch 193/200, Train Loss: 0.0043, Val Loss: 0.0086, Test Loss: 0.0086
+Epoch 194/200, Train Loss: 0.0044, Val Loss: 0.0088, Test Loss: 0.0089
+Epoch 195/200, Train Loss: 0.0043, Val Loss: 0.0093, Test Loss: 0.0097
+Epoch 196/200, Train Loss: 0.0044, Val Loss: 0.0089, Test Loss: 0.0093
+Epoch 197/200, Train Loss: 0.0042, Val Loss: 0.0087, Test Loss: 0.0090
+Epoch 198/200, Train Loss: 0.0043, Val Loss: 0.0085, Test Loss: 0.0087
+Epoch 199/200, Train Loss: 0.0042, Val Loss: 0.0085, Test Loss: 0.0088
+Epoch 200/200, Train Loss: 0.0042, Val Loss: 0.0085, Test Loss: 0.0089
+Saved LSTM-NSP predictions: (9108, 10, 6), actuals: (9108, 10, 6)
+Training completed and saved in lstm_nsp/lstm_nsp_80_10
